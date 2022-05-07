@@ -1,0 +1,73 @@
+<MFM>
+  <Tensors>
+    <Tensor file="diamond/results_t0.nii"/>
+    <Tensor file="diamond/results_t1.nii"/>
+    <Tensor file="diamond/results_t2.nii"/>
+  </Tensors>
+  <Fractions file="diamond/results_fractions.nii" mode="ts+fwf"/>
+  <Diso value="0.003000"/>
+  <Diso2 value="0.001000"/>
+  <DiamondKappa file="diamond/results_kappa.nii"/>
+  <DiamondKappaAD file="diamond/results_kappaAD.nii"/>
+  <B0 file="diamond/results_b0.nii"/>
+  <MetaData>
+    <CommandLine value="/diamond/bin/crlDCIEstimate -i dwi500.nii -o diamond/results.nii -m mask.nii -n 3 -p 24 --fascicle diamondNCcyl --automose aicu --slow"/>
+    <Directory value="/home/local/USHERBROOKE/here2602/SCIL/phantom"/>
+    <ComputationTime value="11s"/>
+    <RealProcessorTime value="04m01s"/>
+    <RescaleSignalIntensity value="true"/>
+    <ForcedMaxSignalIntensityValue value="-1"/>
+    <ForcedMeanSignalIntensityValue value="500"/>
+    <RescaleIntensityFactor value="1"/>
+    <BoundingBox value=""/>
+    <BrainMask file="mask.nii"/>
+    <OptimizationAlgorithm value="bobyqa"/>
+    <CorrectedLeastSquare value="false"/>
+    <CorrectedLeastSquareNewVersion value="false"/>
+    <NoiseModel value="gaussian"/>
+    <SigmaValue value="-1"/>
+    <SigmaVoxelWise value="false"/>
+    <IgnoreSmallSiS0 value="true"/>
+    <AutoModelSelection value="aicu"/>
+    <ModelSelectionMaxIter value="30"/>
+    <ModelSelectionThreshold value="-1"/>
+    <ModelSelectionEnsureMinimumFraction value="0"/>
+    <FreeDiffBound value="0.003"/>
+    <AxialDiffBound value="0.003"/>
+    <RadialDiffBound value="0.003"/>
+    <FractionsSumToOne value="Y"/>
+    <RegularizationWeight value="1"/>
+    <MaxPasses value="10"/>
+    <S0Threshold value="1"/>
+    <deltaDelta value=""/>
+    <NTensors value="3"/>
+    <FascicleModel value="diamondNCcyl"/>
+    <EstimateFreeWaterDiffusivity value="true"/>
+    <EstimateFreeWaterDiffusivityWhenNoFascicle value="false"/>
+    <GlobalFreeWaterDiffusivity value="0.003"/>
+    <EstimateIsotropic2Diffusivity value="false"/>
+    <GlobalIsotropic2Diffusivity value="0.001"/>
+    <FascicleParallelFixedDiffusivity value="0"/>
+    <UseDiamondModelingForFreeWater value="false"/>
+    <UseDiamondModelingForIsotropic2 value="false"/>
+    <EstimateB0 value="true"/>
+    <PriorFileName value=""/>
+    <PriorWeight value="1"/>
+    <UseRobustEstimation value="false"/>
+    <RobustEstimationAnisoK value="0.001"/>
+    <RobustEstimationParam value="1.4826"/>
+    <GMMaskFileName value=""/>
+    <HinderedMode value="tortuosity"/>
+    <HinderedFixedIARD value="-1"/>
+    <HinderedICVF value="false"/>
+    <HinderedBoundedIARD value="false"/>
+    <PruneThreshold value="0.025"/>
+    <InitialStick value=""/>
+    <InitialFA value="0.7"/>
+    <InitialMD value="0.0001"/>
+    <SlowMinimizationMode value="true"/>
+    <UseEstimationMultiRestart value="false"/>
+    <UseEstimationRandomInit value="false"/>
+    <UseNoLogEuclidean value="false"/>
+  </MetaData>
+</MFM>
